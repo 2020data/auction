@@ -105,7 +105,7 @@ else:
     def auction_timer_board():
         if state["last_bid_time"] is not None and not state["auction_ended"]:
             elapsed = time.time() - state["last_bid_time"]
-            time_left = 10.0 - elapsed
+            time_left = 20.0 - elapsed
             
             if time_left <= 0:
                 state["auction_ended"] = True
